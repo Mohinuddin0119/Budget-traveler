@@ -1,11 +1,202 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+<html lang="en" >
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Budget Traveler</title>
+    <link rel="stylesheet" href="./style/style.css" />
+    <!-- use daisyui and tailwind -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class=" text-white">
+    <header>
+      <!-- navbar start -->
+      <div class="navbar bg-base-100 flex justify-around pt-10 mb-10">
+        <div class="">
+          <a class="btn btn-ghost text-xl">daisyUI</a>
+        </div>
+        <div class="flex justify-between w-1/2">
+          <div class="dropdown dropdown-end">
+            <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+              <div class="indicator">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-8 w-8"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                  />
+                </svg>
+                <span
+                  class="badge badge-lg indicator-item text-white bg-orange-500 text-2xl py-4"
+                  >8</span
+                >
+              </div>
+            </div>
+            <div
+              tabindex="0"
+              class="card card-compact dropdown-content bg-base-100 z-[1] mt-3 w-52 shadow"
+            >
+              <div class="card-body">
+                <span class="text-lg font-bold">8 Items</span>
+                <span class="text-info">Subtotal: $999</span>
+                <div class="card-actions">
+                  <button class="btn btn-primary btn-block">View cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown dropdown-end">
+            <div
+              tabindex="0"
+              role="button"
+              class="btn btn-ghost btn-circle avatar"
+            >
+              <div class="w-10 rounded-full">
+                <img
+                  alt="Tailwind CSS Navbar component"
+                  src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"
+                />
+              </div>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+            >
+              <li>
+                <a class="justify-between">
+                  Profile
+                  <span class="badge">New</span>
+                </a>
+              </li>
+              <li><a>Settings</a></li>
+              <li><a>Logout</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- navbar end -->
+    </header>
+    <main >
+        <!-- banner start -->
+        <section class="pt-10 px-4">
+            <div class="flex justify-around items-center">
+                <div class="space-y-3">
+                    <h2 class="card-title text-2xl font-bold">Lets Travel</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt laboriosam, <br> eligendi perferendis nobis aperiam magnam exercitationem <br> corporis consectetur explicabo quo!</p>
+                    <p class="font-bold text-xl">Total Budget: <span>900</span> $</p>
+                </div>
+                <div class="">
+                    <figure>
+                        <img
+                          src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp"
+                          alt="Movie" />
+                      </figure>
+                </div>
+              </div>
+        </section>
+        <!-- banner end -->
+
+        <section class="pt-20">
+            <!-- card container -->
+            <div class="flex flex-col md:flex-row gap-5">
+                <div class= "flex-1 text-black grid grid-cols-1 md:grid-cols-2 gap-2 px-20">
+                    <!-- shajek -->
+                    <div class="card card-side w-96 bg-white shadow-xl gap-5">
+                        <figure class="w-52 p-4 ">
+                          <img
+                    src="./images/shajek.jpg"
+                            alt="Movie" class="border-2 border-red-400 rounded-lg" />
+                        </figure>
+                         <div class="flex flex-col items-center justify-center ">
+                          <h2 class="font-bold text-xl">Shajek</h2>
+                          <p class="font-bold" >Cost: 300 S</p>
+                          <div class="card-actions">
+                            <button class="mt-2 btn btn-primary text-black">Add to cart</button>
+                          </div>
+                        </div>
+                    </div>
+                    <!-- dhaka -->
+                    <div class="card card-side bg-white shadow-xl w-96 gap-5">
+                        <figure class="w-56 p-4">
+                          <img
+                            src="./images/dhaka1.jpg"
+                            alt="Movie" class=" border-2 border-red-400 rounded-lg" />
+                        </figure>
+                        <div class="flex flex-col items-center justify-center">
+                          <h2 class="card-title">Dhaka</h2>
+                          <p class="font-bold">Cost: 300 S</p>
+                          <div class="card-actions">
+                            <button class="mt-2 btn btn-primary text-black">Add to cart</button>
+                          </div>
+                        </div>
+                    </div>
+                    <!-- Khulna -->                 
+                     <div class="card card-side bg-white shadow-xl w-96 gap-5">
+                        <figure class="w-48 p-4">
+                          <img
+                            src="./images/Khulna.png"
+                            alt="Movie" class="border-2 border-orange-600 rounded-lg" />
+                        </figure>
+                        <div class="flex flex-col items-center justify-center">
+                          <h2 class="card-title">Khulna</h2>
+                          <p class="font-bold">Cost: 300 S</p>
+                          <div class="card-actions">
+                            <button class="mt-2 btn btn-primary text-black">Add to cart</button>
+                          </div>
+                        </div>
+                    </div>
+                    <!-- Coxs bazar -->
+                    <div class="card card-side bg-white shadow-xl  w-96 gap-5">
+                        <figure class="w-52 p-4">
+                          <img
+                            src="./images/coxs-bazar.jpg"
+                            alt="Movie" class="rounded-lg border-2 border-orange-400 " />
+                        </figure>
+                        <div class="flex flex-col items-center justify-center">
+                          <h2 class="card-title">Cox's Bazar</h2>
+                          <p class="font-bold">Cost: 300 S</p>
+                          <div class="card-actions">
+                            <button class=" mt-2 btn btn-primary text-black">Add to cart</button>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- cart total -->
+                 <div class="flex-1 space-y-5">
+                    <h1 class="text-2xl text-center font-bold">Cart</h1>
+                    <hr>
+                    <p class="text-center font-bold">Total Cost: <span>0</span> S</p>
+                    <div class="flex justify-center items-center gap-2">
+                        <button class="btn bg-white text-purple-700">
+                            Bus +100
+                        </button>
+                        <button class="btn bg-white text-purple-700">
+                            Traain -200
+                        </button >
+                        <button class='btn bg-white text-purple-700'>
+                            Flight +500
+                        </button>
+                    </div>
+                    <hr>
+                    <p class="text-center font-bold">Grand Total: <span>0</span> S</p>
+            </div>
+        </section>
+    </main>
+
     
-</body>
+    <script src="./javascript/script.js"></script>
+  </body>
 </html>
